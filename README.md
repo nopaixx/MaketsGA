@@ -3,6 +3,8 @@ Hands On Neural Network inside Metatrader
 
 In this article, we attempt an approach to the use of architecture and modeling of deep neural networks inside metatrader 5 plataform "IN THE BOX" without external librarys.
 
+We are NOT going to train a network to predict a value (let's try our best) and we are going to train a network that is going to be able to discover by itself a complex trading strategy.
+
 
 # Mandatory Literature
 It is assumed that readers are familiar with the basic concepts of deep networks and financial markets. 
