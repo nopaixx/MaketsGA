@@ -26,7 +26,7 @@ Metatrader is a popular software among individual and institutional traders. The
 Of course Metatrader incorporates a tecnical module and object-oriented programming language (in version 5) with you can develop  your own indicators and/or fully automatic trading robots, this makes Metatrader a good choice for both an individual trader and an institutional trader looking for a robust platform.
 
 # About Quantitative Traders
-Quantitative trading provides a new science or strategy to operate in the financial markets applying statistical models and in recent years models of maching learning or deep learning.
+Quantitative trading provides a new science or strategy to operate in the financial markets applying statistical models and in recent years models of machine learning/deep learning.
 
 What are we trying to do with quantitative trading? 
 
