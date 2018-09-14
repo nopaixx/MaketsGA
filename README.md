@@ -1,7 +1,7 @@
 # MaketsGA
 Hands On Neural Network inside Metatrader
 
-In this article, we attempt an approach to the use of architecture and modeling of deep neural networks INSIDE metatrader 5 plataform "In the box" without external librarys.
+In this article, we attempt an approach to the use of architecture and modeling of deep neural networks inside metatrader 5 plataform "IN THE BOX" without external librarys.
 
 
 # Mandatory Literature
@@ -28,7 +28,16 @@ Quantitative trading provides a new science or strategy to operate in the financ
 
 What are we trying to do with quantitative trading? 
 
-Usually quantitave traders download financial timeseries then apply a treatment to the data if necessary (normalization PCA etc...). Finally they train a network(python/R etc..) usually with the objective of reducing the error between the prediction and the real value and finally they take a decision(automatic or not) based on model single prediction value. (This sounds interesting python and r have hundreds of liberties for machine learning some of them interesting as TensorFlow.)
+Usually quantitave traders download(csv,sql etc..) financial timeseries then apply a treatment to the data if necessary (normalization PCA etc...). Finally they train a network(python/R etc..) normally with the objective of reducing the error between the prediction and the real value and finally they take a decision(automatic or not) based on model single prediction value. (This sounds interesting python and r have hundreds of liberties for machine learning some of them interesting as recently google library TensorFlow)
+
+In other words we have price for time T-1....T-n as independent variables and we try to predict a T+1 price as dependent variable.
+
+
+# Motivations about MarketsGA and Quantitative Traders problems
+
+
+
+
 
 
 
