@@ -11,6 +11,9 @@ It is assumed that readers are familiar with the basic concepts of deep networks
 Attached are some truly interesting articles to familiarize the reader with the technology that is intended to be developed.
 
 1.-[THIRD GENERATION NEURAL NETWORKS: DEEP NETWORKS](https://www.mql5.com/en/articles/1103).
+
 2.-[EVALUATION AND SELECTION OF VARIABLES FOR MACHINE LEARNING MODELS](https://www.mql5.com/en/articles/2029).
+
 3.-[RANDOM FORESTS PREDICT TRENDS](https://www.mql5.com/en/articles/1165)
+
 4.-[MARKET THEORY](https://www.mql5.com/en/articles/1825)
