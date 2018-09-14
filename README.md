@@ -9,4 +9,4 @@ Usually quantitave traders download financial timeseries then apply a treatment 
 It is assumed that readers are familiar with the basic concepts of deep networks and financial markets. 
 
 Attached are some truly interesting articles to familiarize the reader with the technology that is intended to be developed.
-[Link Text](https://www.mql5.com/en/articles/1103).
+[THIRD GENERATION NEURAL NETWORKS: DEEP NETWORKS](https://www.mql5.com/en/articles/1103).
