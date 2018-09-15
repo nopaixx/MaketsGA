@@ -43,7 +43,7 @@ The main problems that quantitative trader encounters when operating in the mark
 
 This means that a quantitative trader who is dedicated to predicting a value based on past values is not enough to develop a successful FOREX system. You need a complex system that can manage the volume of the operation, the risk of it and the capital of the account (among others).
 
-Can you imagine be able to train a network of any input dimension any internal dimension and any output dimension to try to discover a full complex trading system INSIDE TRADING PLATFORM?
+Can you imagine to train a network of any input dimension any internal dimension and any output dimension to try to discover a full complex trading system INSIDE TRADING PLATFORM?
 
 
 
