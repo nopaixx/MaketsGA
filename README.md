@@ -37,6 +37,7 @@ In other words we have price for time T-1....T-n as independent variables and we
 
 # Motivations about MarketsGA and Quantitative Traders problems
 
+The main problems a quantitative trader encounters when operating in the market is that he is exposed to market volatility, rapid market movements, price slippage and the constant noise produced by the randomness of the market structure itself.
 
 
 
