@@ -39,7 +39,7 @@ In other words we have price for time T-1....T-n as independent variables and we
 
 # Motivations about MarketsGA and Quantitative Traders problems
 
-The main problems a quantitative trader encounters when operating in the market is that are exposed to market volatility, rapid market movements, price slippage and the constant noise produced by the randomness of the market structure itself.
+The main problems that quantitative trader encounters when operating in the market is that are exposed to market volatility, rapid market movements, price slippage and the constant noise produced by the randomness of the market structure itself.
 
 This means that a quantitative trader who is dedicated to predicting a value based on past values is not enough to develop a successful FOREX system. You need a complex system that can manage the volume of the operation, the risk of it and the capital of the account (among others).
 
