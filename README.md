@@ -111,8 +111,11 @@ fitness_function=TesterStatistics(STAT_PROFIT)*TesterStatistics(STAT_SHARPE_RATI
 
 This is the neural network that we are going to train (with a small change in the software it could be of any dimension and have more hidden layers).
 
-In summary we send 2000 input variables this is (25 backbars * 5 symbols * 10 max slots orders )* 2 lots and profits
-After apply weigth calculation sytem can perform 40 ouputs operations at once this is 8 operation * 5 symbols
+We send 2000 input variables this is (25 backbars * 5 symbols * 10 max slots orders )* 2 lots and profits.
+After apply weigth calculation sytem can perform 40 ouputs operations at once this is 8 operation * 5 symbols.
+
+In summary out genetic algorithm need perform optimization of 74.200 parameters this is (2000 * 35)+(35 * 35)+(35 * 35)+(35 * 50)
+
 
 
 # GA_Manager.mq5
