@@ -69,7 +69,7 @@ As you probably already know, we must then find the values W1..WN that comply wi
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/formulapercepton.jpg)
 
-Now we need optimize all Wn weigth using Genetics Algorithms, and we apply a binary transformatión of all weigth where all group of gene in specie represent a Wn weigth
+Now we need optimize all Wn weigth using Genetics Algorithms, and we apply a binary transformatión of all weigth where all group of gene in specie represent a Wn weigth(note we initialized weigth in random way)
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/wtobin.jpg)
 
