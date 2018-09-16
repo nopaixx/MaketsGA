@@ -289,7 +289,7 @@ Finally let go to analize go we can perform tradings using neural network output
       
       
       int symbid=0;
-      // 4 actions available for each symbol
+      // 4 actions available for each symbol + 4 lot values
       //out0=need close lot buy
       //out1=lot to close on out0
       //out2=need close lot sell
@@ -331,7 +331,7 @@ In summary this robot can perform 8 operation for each symbol available open/clo
 
 
 # Backtesting analisis
-After running some evolution we can and optimization grah where each blue dot represent a result for each specie
+After running some evolution we can see optimization grah where each blue dot represent the result for each specie
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/evolutionnet.jpg)
 
