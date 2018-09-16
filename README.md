@@ -56,6 +56,8 @@ Population-->Population is a group of species all together perform a generation
 
 Evolution->Evolution is the step that is generated between one generation and another, where there is a mixture of genes that generates new species and new species are born with a certain mutation.
 
+Fitness function--> The fitness function is the function that will tell us how good a species is and will be used to maximize the value.
+
 ![alt text](https://github.com/nopaixx/TensorFlow-GeneticsAlgo/blob/master/GA%20grafic.jpg)
 
 # Genetics algorithms basis optimization
@@ -70,6 +72,8 @@ As you probably already know, we must then find the values W1..WN that comply wi
 Now we need optimize all Wn weigth using Genetics Algorithms, and we apply a binary transformatión of all weigth where all group of gene in spece represent a Wn weigth
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/wtobin.jpg)
+
+
 
 
 # Loss function vs fitness function
