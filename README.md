@@ -346,7 +346,7 @@ We can test it with the best specie
 
 -Add GaussianNoise at each input layer to reduce overfitting and increas performance on test data
 
--I detected som output neuron witout activation we need to add dropout to force neurons activaction and reduce overfitting
+-I detected some output neuron witout activation we need to add dropout to force neurons activaction and reduce overfitting
 
 -Add normalization at each layer output
 
