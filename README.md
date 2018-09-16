@@ -107,7 +107,7 @@ fitness_function=TesterStatistics(STAT_PROFIT)*TesterStatistics(STAT_SHARPE_RATI
 
 # Our Neural Network arquitecture with 2000 inputs 3 hidden layers(35 neuron each) and 40 outputs
 
-![alt text](https://github.com/nopaixx/MaketsGA/blob/master/netaquitecture.jpg)
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/netarquitecture.jpg)
 
 # GA_Manager.mq5
 This library is implement a genetic algorhitm to evolve each population. And we deploy a full conected network with 2000 inputs 3 hidden layers with 35 neurons each with 40 outputs
