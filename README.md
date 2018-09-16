@@ -124,8 +124,8 @@ This library is implement a genetic algorhitm to evolve each population. And we 
 ```
 //all symbols abailable to trade we try to discober complex system with all symbols together
 string symb[]={"EURUSD","GBPUSD","AUDUSD","USDJPY","USDCAD"};
-//we send 50 orders back history
-int backbars=50;
+//we send 25 orders back history
+int backbars=25;
 //maxtotal orders abailable per symbol and per direction(buy/sell)
 int totalorders=10;
 //First input layer size
@@ -343,6 +343,14 @@ We can test it with the best specie
 
 
 # Future improvements
+
+-Add GaussianNoise at each input layer to reduce overfitting and increas performance on test data
+-I detected som output neuron witout activation we need to add dropout to force neurons activaction and reduce overfitting
+-Add normalization at each layer output
+-Add and deploy activations at each output layer
+-Try optimization with Simulation Annelaning
+-Implement Neuro Evolution Augmented Topologies (NEAT) to self optimized network arquitecture
+
 
 # Conclusions
 
