@@ -360,9 +360,12 @@ We can test it with the best specie
 
 # Conclusions
 
+-In this article i demonstrated how we can develop our own technology to work with neural networks in our trading platform without the use of external librarys. In our case i take as a reference a network of 2000 inputs 3 hidden layers and 40 outputs(with small change we can use any dimension)
 
+-I have developed a network that is capable of making 40 decisions at a time (8 for each financial instrument) this is as a main requiremnt of this document, network can deploy and discover a full complex trading strategy based on all instruments together.
+This means Neural Network can take desicions as open/close/buy/sell per instrument simultanously and deploy a full strategy like hedging over instrument and hedging over correlated instrument
 
-
+-This allows the start of a promising trading system(not value prediction) that could be discovered by a neural network.
 
 
 
