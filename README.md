@@ -102,13 +102,39 @@ fitness_function=TesterStatistics(STAT_PROFIT)*TesterStatistics(STAT_SHARPE_RATI
 ```
 
 # Software arquitecture
--onthebox
--tradedoubles
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/softarquitecture.jpg)
 
 
-# geneticsevolution.mqh
+# GA_Manager.mq5
+This library is implement a genetic algorhitm to evolve each population.
+
+```
+//all symbols abailable to trade we try to discober complex system with all symbols together
+string symb[]={"EURUSD","GBPUSD","AUDUSD","USDJPY","USDCAD"};
+//we send 50 orders back history
+int backbars=50;
+//maxtotal orders abailable per symbol and per direction(buy/sell)
+int totalorders=10;
+//First input layer size
+int size_out1=35;
+//Second input layer size
+int size_out2=35;
+//third input layer size
+int size_out3=35;
+//output layer (1-output buy 2-output lot buy 3-output sell 4-output lot sell)*for each symbol 5*4=20
+int out=30;//lot 
+//total number of species in population
+input int numpopulation=75;
+//user for selection 2 best species
+input double i_tournamentSize = 5;
+//if we need add best species in new generation
+input bool i_elitism = true;
+//user for randome crossover 
+input double i_uniformRate = 0.5;
+//user for random mutation rate
+input double   i_mutationRate = 0.015;
+```
 
 
 # speciestrader.mqh
