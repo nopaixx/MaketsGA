@@ -318,7 +318,17 @@ In summary this robot can perform 8 operation for each symbol available open/clo
 
 
 
-# backtesting analisis
+# Backtesting analisis
+After running some evolution we can and optimization grah where each blue dot represent a result for each specie
+
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/evolutionnet.jpg)
+
+Nice!, each new evolution neural network weigth perform and optimization and improve previous generation results
+
+We can test it with the best specie
+
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/runbest.jpg)
+
 
 # Future improvements
 
