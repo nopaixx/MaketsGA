@@ -105,6 +105,9 @@ fitness_function=TesterStatistics(STAT_PROFIT)*TesterStatistics(STAT_SHARPE_RATI
 -onthebox
 -tradedoubles
 
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/softarquitecture.jpg)
+
+
 # geneticsevolution.mqh
 
 
