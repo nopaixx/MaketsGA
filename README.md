@@ -136,6 +136,50 @@ input double i_uniformRate = 0.5;
 input double   i_mutationRate = 0.015;
 ```
 
+Now we can analize 2 most important metohds
+Function crossover recibe two individual species and perform a random crossover and return  new specie completly evolved
+
+```
+// Crossover individuals
+Individual* Algorithm::crossover(Individual &indiv1, Individual &indiv2) {
+        Individual *newSol = new Individual();
+        newSol.initIndividual(bitlength);        
+        for (int i = 0; i < indiv1.size(); i++) {        
+            Alg.HQRndRandomize(&state);
+            double rand1=UniformValue(-1,1);
+            
+            if (rand1 <= uniformRate) {
+                newSol.setGene(i, indiv1.getGene(i));
+            } else {
+                newSol.setGene(i, indiv2.getGene(i));
+            }
+        }
+        return newSol;
+    }
+ 
+```
+
+Function mutate perform a random mutation to some genes in specie
+```
+// Mutate an individual
+void Algorithm::mutate(Individual &indiv) {
+        // Loop through genes
+        for (int i = 0; i < indiv.size(); i++) {
+            Alg.HQRndRandomize(&state);
+            double rand1=UniformValue(0,1);
+            
+            if (rand1 <= mutationRate) {
+                // Create random gene                
+                Alg.HQRndRandomize(&state);
+                double rand1=UniformValue(0,2);                
+                double gene = indiv.getGene(i)*rand1;
+                indiv.setGene(i, gene);
+            }
+        }
+    }
+```
+
+
 
 # speciestrader.mqh
 
