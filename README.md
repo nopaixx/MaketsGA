@@ -345,11 +345,17 @@ We can test it with the best specie
 # Future improvements
 
 -Add GaussianNoise at each input layer to reduce overfitting and increas performance on test data
+
 -I detected som output neuron witout activation we need to add dropout to force neurons activaction and reduce overfitting
+
 -Add normalization at each layer output
+
 -Add and deploy activations at each output layer
+
 -Try optimization with Simulation Annelaning
+
 -Implement Neuro Evolution Augmented Topologies (NEAT) to self optimized network arquitecture
+
 
 
 # Conclusions
