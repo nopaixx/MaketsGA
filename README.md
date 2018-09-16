@@ -74,7 +74,7 @@ Now we need optimize all Wn weigth using Genetics Algorithms, and we apply a bin
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/wtobin.jpg)
 
 
-After applying the fitness function in each species we can obtain the best species of each generation and create new species that are born through the process of crossover based on their progenitors (plus a small mutation).
+After applying the fitness function in each species we can obtain the best species of each generation and create new species that are born through the process of random crossover based on their progenitors (plus a small mutation).
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/newspecieborn.jpg)
 
