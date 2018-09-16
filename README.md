@@ -92,6 +92,13 @@ The main objective of the document is the creation of a neural network optimized
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/fitness_function.jpg)
 [More info about ratio sharpe](https://es.wikipedia.org/wiki/Ratio_de_Sharpe).
 
+In summary our fitness function tell us how good is a specie before to evolve a new population of species and our fitness function value is equal to final_balance * ratio_sharpe. I have chosen a ratio shape because in its base the ratio shape includes a risk renatability analysis based on a reference environment and we therefore want our fitness function to include a risk analysis of each investment. In summary, the more benefit based on ratio shape the better.
+(sure fitness function could be improved in future)
+
+```
+fitness_function=TesterStatistics(STAT_PROFIT)*TesterStatistics(STAT_SHARPE_RATIO);
+
+```
 
 # Software arquitecture
 -onthebox
