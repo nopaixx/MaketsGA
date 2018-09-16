@@ -60,7 +60,7 @@ Fitness function--> The fitness function is the function that will tell us how g
 
 ![alt text](https://github.com/nopaixx/TensorFlow-GeneticsAlgo/blob/master/GA%20grafic.jpg)
 
-# Genetics algorithms basis optimization
+# Genetics algorithms basis Neural Netowrk weigth optimization
 As indicated in the introduction of the article we will try to optimize a neural network of which input dimension any internal dimension and any output dimension. However, to facilitate the exposure we will use the simplest NN structure the perception.
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/percepton.jpg)
