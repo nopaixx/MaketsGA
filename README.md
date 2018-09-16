@@ -367,7 +367,7 @@ This means Neural Network can take desicions as open/close/buy/sell per instrume
 
 -This allows the start of a promising trading system(not value prediction) that could be discovered by a neural network.
 
-
+-As a chimera for any trader i have developed a system that does NOT use any technical indicator.
 
 
 
