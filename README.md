@@ -49,7 +49,7 @@ Can you imagine to train a network of any input dimension any internal dimension
 # Genetics algorithms basis optimization
 As indicated in the introduction of the article we will try to optimize a neural network of which input dimension any internal dimension and any output dimension. However, to facilitate the exposure we will use the simplest NN structure the perception.
 
-![alt text](https://github.com/nopaixx/MaketsGA/blob/master/perceptonbasis.jpg)
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/percepton.jpg)
 
 As you probably already know, we must then find the values W1..WN that comply with the following formula
 
