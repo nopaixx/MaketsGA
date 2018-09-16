@@ -45,6 +45,18 @@ This means that a quantitative trader who is dedicated to predicting a value bas
 
 Can you imagine to train a network of any input dimension any internal dimension and any output dimension to try to discover a full complex trading system INSIDE TRADING PLATFORM?
 
+# Basic concepts about GA
+Genetic algorithms are based on the genetic process of biologically living organisms. Where in a closed environment of X species only the strongest (or the best adapted) to the environment survive in a new species to evolve to a new specie with a mixted gens of the survivors.
+
+Genes->Parameter to be optimized
+
+Species->Each species contains a certain amount of genes all together offer a solution to a specific problem.
+
+Population-->Population is a group of species all together perform a generation
+
+Evolution->Evolution is the step that is generated between one generation and another, where there is a mixture of genes that generates new species and new species are born with a certain mutation.
+
+![alt text](https://github.com/nopaixx/TensorFlow-GeneticsAlgo/blob/master/GA%20grafic.jpg)
 
 # Genetics algorithms basis optimization
 As indicated in the introduction of the article we will try to optimize a neural network of which input dimension any internal dimension and any output dimension. However, to facilitate the exposure we will use the simplest NN structure the perception.
@@ -55,6 +67,9 @@ As you probably already know, we must then find the values W1..WN that comply wi
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/formulapercepton.jpg)
 
+Now we need optimize all Wn weigth using Genetics Algorithms, and we apply a binary transformatión of all weigth where all group of gene in spece represent a Wn weigth
+
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/wtobin.jpg)
 
 
 # Loss function vs fitness function
