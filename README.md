@@ -46,6 +46,33 @@ This means that a quantitative trader who is dedicated to predicting a value bas
 Can you imagine to train a network of any input dimension any internal dimension and any output dimension to try to discover a full complex trading system INSIDE TRADING PLATFORM?
 
 
+# Nerual Network weigth optimization basis
+
+
+# Genetics algorithms basis
+
+
+# Loss function vs fitness function
+
+
+# Software arquitecture
+-onthebox
+-tradedoubles
+
+# geneticsevolution.mqh
+
+
+# speciestrader.mqh
+
+
+# backtesting analisis
+
+# Future improvements
+
+# Conclusions
+
+
+
 
 
 
