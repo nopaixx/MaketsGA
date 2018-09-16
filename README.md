@@ -200,7 +200,7 @@ class CNet
   ```
 Function applycalcs(double &values[],double &percepts[]) recibe input values and perform percepton calculation and return a percepts as output.
 
-Let go to analize how we call a full conected network of 3 hidden layers with 35 neurons each 
+Let's go to analize how we call a full conected network of 3 hidden layers with 35 neurons each 
 
 ```
       net1.applycalcs(ind1,ind2);
@@ -211,8 +211,110 @@ Let go to analize how we call a full conected network of 3 hidden layers with 35
 
 ind1 var contain all inputs, after apply 3 layers calculation outs contain all outputs optimized
 
+Finally let go to analize go we can perform tradings buy neural network outputs
+````
+      
+      ArrayResize(profitbuy,numbarshistory+1);
+      ArrayResize(profitsell,numbarshistory+1);
+      
+      ArrayResize(volbuy,numbarshistory+1);
+      ArrayResize(volsell,numbarshistory+1);
+      
+      for (int x=0;x<ArraySize(symb);x++){
+         profitbuy[numbarshistory][x]=getProfits(POSITION_TYPE_BUY,symb[x]);
+         profitsell[numbarshistory][x]=getProfits(POSITION_TYPE_SELL,symb[x]);
+         
+         volbuy[numbarshistory][x]=getVolums(POSITION_TYPE_BUY,symb[x]);
+         volsell[numbarshistory][x]=getVolums(POSITION_TYPE_SELL,symb[x]);
+         orderscount+=volbuy[numbarshistory][x]+volsell[numbarshistory][x];
+      }
+      numbarshistory++;
+      
+      double ind1[];// INPUTS
+      double ind2[];//output ind for first net
+      double ind3[];//output ind for sec net;
+      double ind4[];//output ind for sec net;
+      double outs[];//siganles >0 buy <0sell    
+      
+      ArrayResize(ind1,4*backbars*ArraySize(symb));
+      int cta=0;
+      for (int x=numbarshistory-1;x>=numbarshistory-backbars;x--){
+         if (x<=0){
+            for (int y=0;y<ArraySize(symb);y++){
+               ind1[cta]=1; //profitbu inc
+               cta++;
+               ind1[cta]=1;
+               cta++;
+               ind1[cta]=1;
+               cta++;
+               ind1[cta]=1;
+               cta++;
+            }
+         }else{
+            for (int y=0;y<ArraySize(symb);y++){
+               ind1[cta]=profitbuy[x][y]/profitbuy[x-1][y];
+               cta++;
+               ind1[cta]=profitsell[x][y]/profitsell[x-1][y];
+               cta++;
+               /*ind1[cta]=volbuy[x][y]/volbuy[x-1][y];
+               cta++;
+               ind1[cta]=volsell[x][y]/volsell[x-1][y];*/
+               ind1[cta]=volbuy[x][y];
+               cta++;
+               ind1[cta]=volsell[x][y];
+               cta++;
+               
+            }
+         }
+         
+      }
+      
+      //apply networks calcs
+      net1.applycalcs(ind1,ind2);
+      net2.applycalcs(ind2,ind3);
+      net3.applycalcs(ind3,ind4);
+      out1.applycalcs(ind4,outs);
+      
+      
+      int symbid=0;
+      // 4 actions available for each symbol
+      //out0=need close lot buy
+      //out1=lot to close on out0
+      //out2=need close lot sell
+      //out3=lot to close on out2
+      //out4=need open buy
+      //out5=lot to open on out 4
+      //out6=need open sell
+      //out7=lot to open on out5
+      for (int x=0;x<(ArraySize(symb)*8);x+=8){      
+         
+         if (outs[x]>0){
+            //need close lotbuy outs[x+1]
+            printf("CLOSE1");
+            close(POSITION_TYPE_BUY,outs[x+1],symb[symbid]);
+         }   
+         if (outs[x+2]>0){
+            //need close lotsell outs[x+3]
+            printf("CLOSE2");
+            close(POSITION_TYPE_SELL,outs[x+3],symb[symbid]);
+         }   
+         if (outs[x+4]>0){
+            //need open lot buy outs[x+5]
+            printf("OPEN1");
+            open(POSITION_TYPE_BUY,outs[x+5],symb[symbid]);
+         }
+         if (outs[x+6]>0){
+            //need open lot sell outs[x+7]
+            printf("OPEN2");
+            open(POSITION_TYPE_SELL,outs[x+7],symb[symbid]);
+         }
+                  
+         symbid++;                        
+      }
+      //trading by outs outstrategy
+````
 
-
+In summary this robot can perform 8 operation for each symbol available open/close/buy/sell simultaneously
 
 
 
