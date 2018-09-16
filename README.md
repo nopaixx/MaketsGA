@@ -367,6 +367,8 @@ This means Neural Network can take desicions as open/close/buy/sell per instrume
 
 -This allows the start of a promising trading system(not value prediction) that could be discovered by a neural network.
 
+-This library can also be the basis for the development of promising technical indicators based on operation (not prediction).
+
 -As a chimera for any trader i have developed a system that does NOT use any technical indicator.
 
 
