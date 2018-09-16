@@ -80,6 +80,16 @@ After applying the fitness function in each species we can obtain the best speci
 
 
 # Loss function vs fitness function
+The loss function in a machine learning represents the error between the predicted value vs. the true value, usually the objective of the neural network is to minimize the error, understanding that a minor error come to a better final result. The most common loss functions are MAE, MSE for regression problems and crossentropy for classification problems. (It's not the purpose of this document to analyze the performance of these functions).
+
+The main difference between the gradient descent method and the genetic algorithms to optimize the weights of a neural network, is that, while in the first we must process over and over again the function of lost epoch to epoch to see how the error decreases, with the genetic algorithm we do not need to process the network any time of training simply we should run several networks (piloted by the genes of a species) and check how good is(or bad have done).
+
+To know how good is a species we will process all the actions performed to the fitness function. The design and development of the fitness function is a more important key element for the proper functioning of the genetic algorithm and will determine the success of the complex trading system.
+
+# Our Fitness function
+The main objective of the document is the creation of a neural network optimized by genetic algorithm in order to discover a complex trading system capable of making any decision available on the platform. This includes both opening and closing trades as well as managing open trades at all times and making decisions regarding the performance of trades and capital management. For this reason our loss function will be based on:
+
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/fitness_function.jpg)
 
 
 # Software arquitecture
