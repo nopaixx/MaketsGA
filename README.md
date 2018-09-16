@@ -90,6 +90,7 @@ To know how good is a species we will process all the actions performed to the f
 The main objective of the document is the creation of a neural network optimized by genetic algorithm in order to discover a complex trading system capable of making any decision available on the platform. This includes both opening and closing trades as well as managing open trades at all times and making decisions regarding the performance of trades and capital management. For this reason our loss function will be based on:
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/fitness_function.jpg)
+[More info about ratio sharpe](https://es.wikipedia.org/wiki/Ratio_de_Sharpe).
 
 
 # Software arquitecture
