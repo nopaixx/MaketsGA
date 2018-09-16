@@ -96,6 +96,7 @@ In summary our fitness function tell us how good is a specie before to evolve a 
 (sure fitness function could be improved in future)
 
 ```
+//we use TesterStatistics MQL function to help calculations
 fitness_function=TesterStatistics(STAT_PROFIT)*TesterStatistics(STAT_SHARPE_RATIO);
 
 ```
