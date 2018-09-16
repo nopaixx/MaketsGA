@@ -181,7 +181,28 @@ void Algorithm::mutate(Individual &indiv) {
 
 
 
-# speciestrader.mqh
+# speciesrun.mq5
+This library deploy class CNET to perform a internal neural network calculation and perform trades bases on optimized weigth
+
+```
+class CNet
+  {  
+  private:
+   double damepercept(int pid,double &values[]);
+  public:      
+   double xvalues[];
+   int numinput;
+   int numouts;
+   int               CNet_OnInit(int inputs,int outputs);
+   double applycalcs(double &values[],double &percepts[]);
+   
+  };
+  ```
+Function applycalcs(double &values[],double &percepts[]) recibe input values and perform percepton calculation and return a percepts as output
+
+
+
+
 
 
 # backtesting analisis
