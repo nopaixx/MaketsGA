@@ -105,9 +105,12 @@ fitness_function=TesterStatistics(STAT_PROFIT)*TesterStatistics(STAT_SHARPE_RATI
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/softarquitecture.jpg)
 
+# Our Neural Network arquitecture with 2000 inputs 3 hidden layers(35 neuron each) and 40 outputs
+
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/netaquitecture.jpg)
 
 # GA_Manager.mq5
-This library is implement a genetic algorhitm to evolve each population.
+This library is implement a genetic algorhitm to evolve each population. And we deploy a full conected network with 2000 inputs 3 hidden layers with 35 neurons each with 40 outputs
 
 ```
 //all symbols abailable to trade we try to discober complex system with all symbols together
@@ -122,8 +125,8 @@ int size_out1=35;
 int size_out2=35;
 //third input layer size
 int size_out3=35;
-//output layer (1-output buy 2-output lot buy 3-output sell 4-output lot sell)*for each symbol 5*4=20
-int out=30;//lot 
+//output layer
+int out=40;//lot 
 //total number of species in population
 input int numpopulation=75;
 //user for selection 2 best species
