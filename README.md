@@ -51,6 +51,9 @@ As indicated in the introduction of the article we will try to optimize a neural
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/perceptonbasis.jpg)
 
+Como seguramente ya sabras, debemos entoncontrar los valores W1..WN que cumplan con la siguiente formula
+
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/formulapercepton.jpg)
 
 
 
