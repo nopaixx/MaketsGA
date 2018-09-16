@@ -223,7 +223,7 @@ Let's go to analize how we call a full conected network of 3 hidden layers with 
 
 ind1 var contain all inputs, after apply 3 layers calculation outs contain all outputs optimized
 
-Finally let go to analize go we can perform tradings buy neural network outputs
+Finally let go to analize go we can perform tradings using neural network outputs
 ````
       
       ArrayResize(profitbuy,numbarshistory+1);
