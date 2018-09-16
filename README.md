@@ -198,7 +198,18 @@ class CNet
    
   };
   ```
-Function applycalcs(double &values[],double &percepts[]) recibe input values and perform percepton calculation and return a percepts as output
+Function applycalcs(double &values[],double &percepts[]) recibe input values and perform percepton calculation and return a percepts as output.
+
+Let go to analize how we call a full conected network of 3 hidden layers with 35 neurons each 
+
+```
+      net1.applycalcs(ind1,ind2);
+      net2.applycalcs(ind2,ind3);
+      net3.applycalcs(ind3,ind4);
+      out1.applycalcs(ind4,outs);
+```
+
+ind1 var contain all inputs, after apply 3 layers calculation outs contain all outputs optimized
 
 
 
