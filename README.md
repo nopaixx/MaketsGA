@@ -46,10 +46,12 @@ This means that a quantitative trader who is dedicated to predicting a value bas
 Can you imagine to train a network of any input dimension any internal dimension and any output dimension to try to discover a full complex trading system INSIDE TRADING PLATFORM?
 
 
-# Nerual Network weigth optimization basis
+# Genetics algorithms basis optimization
+As indicated in the introduction of the article we will try to optimize a neural network of which input dimension any internal dimension and any output dimension. However, to facilitate the exposure we will use the simplest NN structure the perception.
+
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/perceptonbasis.jpg)
 
 
-# Genetics algorithms basis
 
 
 # Loss function vs fitness function
