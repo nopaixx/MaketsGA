@@ -69,11 +69,14 @@ As you probably already know, we must then find the values W1..WN that comply wi
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/formulapercepton.jpg)
 
-Now we need optimize all Wn weigth using Genetics Algorithms, and we apply a binary transformatión of all weigth where all group of gene in spece represent a Wn weigth
+Now we need optimize all Wn weigth using Genetics Algorithms, and we apply a binary transformatión of all weigth where all group of gene in specie represent a Wn weigth
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/wtobin.jpg)
 
 
+After applying the fitness function in each species we can obtain the best species of each generation and create new species that are born through the process of crossover based on their progenitors (plus a small mutation).
+
+![alt text](https://github.com/nopaixx/MaketsGA/blob/master/newspecieborn.jpg)
 
 
 # Loss function vs fitness function
