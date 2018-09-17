@@ -43,6 +43,8 @@ The main problems about quantitative trader encounters when operating in real ma
 
 This means that a quantitative trader who is dedicated to predicting a value based on past values is NOT enough to develop a successful FOREX trading system. You need a complex system that can manage the volume of the operation, the risk of it and the capital of the account (and others...).
 
+The conclusion of the previous paragraph is that while the quantitative trader makes decisions based on statistical data he needs a trading system designed by the human mind and based on static rules.
+
 Can you imagine to train a network of any input dimension any internal dimension and any output dimension to try to discover a full complex trading system INSIDE TRADING PLATFORM?
 
 # Basic concepts about GA
