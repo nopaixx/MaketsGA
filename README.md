@@ -62,7 +62,7 @@ Fitness function--> The fitness function is the function that will tell us how g
 
 ![alt text](https://github.com/nopaixx/TensorFlow-GeneticsAlgo/blob/master/GA%20grafic.jpg)
 
-# Genetics algorithms basis Neural Netowrk weigth optimization
+# Genetics algorithms basis Neural Network weigth optimization
 As indicated in the introduction of the article we will try to optimize a neural network of any input dimension any internal dimension and any output dimension. However, to facilitate the exposure we will use the simplest Neural Network structure named percepton.
 
 ![alt text](https://github.com/nopaixx/MaketsGA/blob/master/percepton.jpg)
@@ -84,7 +84,7 @@ After applying the fitness function in each species we can obtain the best speci
 # Loss function vs fitness function
 The loss function in a machine learning represents the error between the predicted value vs. the true value, usually the objective of the neural network is to minimize the error, understanding that a minor error come to a better final result. The most common loss functions are MAE, MSE for regression problems and crossentropy for classification problems. (It's not the purpose of this document to analyze the performance of these functions).
 
-The main difference between the gradient descent method and the genetic algorithms to optimize the weights of a neural network, is that, while in the first we must process over and over again the loss function epoch to epoch to see how the error decreases, with the genetic algorithm we do not need to process the network any epoch of training simply we should run several networks (piloted by the genes of a species) check how good is(or bad have done) each specie and finally evolve to new population only based on the best species
+The main difference between the gradient descent method and the genetic algorithms to optimize the weights of a neural network, is that, while in the first we must process over and over again the loss function epoch to epoch to see how the error decreases, with the genetic algorithm we do not need to process the network any epoch of training simply we should run several networks (piloted by the genes of a species) check how good is each specie and finally evolve to new population only based on the best species
 
 To know how good is a species we will process all the actions performed to the fitness function. The design and development of the fitness function is a more important key element for the proper functioning of the genetic algorithm and will determine the success of the complex trading system.
 
