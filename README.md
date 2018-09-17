@@ -1,7 +1,7 @@
 # MaketsGA
 Hands On Neural Network inside Metatrader
 
-In this article, we attempt an approach to the use of architecture and modeling of deep neural networks inside metatrader 5 plataform "IN THE BOX" without external librarys.
+In this article, we attempt an approach to the use of architecture and modeling of deep neural networks inside trading plataform "IN THE BOX" without external librarys.
 
 Let's try to demonstrate how we can optimize a neural network of any dimension using genetic algorithms inside our trading platform.
 
